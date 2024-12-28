@@ -8,3 +8,10 @@ This is a minimal reproduction repository for the problem.
 
 - node v22.12.0
 - pnpm v9.15.1
+
+## Development
+
+```sh
+pnpm install
+pnpm test
+```
