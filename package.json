@@ -1,0 +1,14 @@
+{
+  "name": "monorepo-vue-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm run -r build",
+    "test": "pnpm run -r test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "packageManager": "pnpm@9.11.0"
+}
