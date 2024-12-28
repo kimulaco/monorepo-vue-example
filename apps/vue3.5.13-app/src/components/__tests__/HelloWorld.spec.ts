@@ -3,7 +3,7 @@ import { mount } from '@vue/test-utils'
 import HelloWorld from '../HelloWorld.vue'
 
 describe('HelloWorld', () => {
-  it('propsのmsgが正しく表示されること', () => {
+  it('should display the msg prop correctly', () => {
     const wrapper = mount(HelloWorld, {
       props: {
         msg: 'Hello Vitest'
