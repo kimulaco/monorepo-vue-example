@@ -4,6 +4,8 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+packageExtensionsChecksum: 587978f1259f680015f518d6d08b7713
+
 importers:
 
   .: {}
@@ -17,6 +19,9 @@ importers:
       '@vitejs/plugin-vue':
         specifier: 5.2.1
         version: 5.2.1(vite@5.4.11)(vue@3.4.21(typescript@5.6.2))
+      '@vue/test-utils':
+        specifier: 2.4.6
+        version: 2.4.6(vue@3.4.21(typescript@5.6.2))
       '@vue/tsconfig':
         specifier: 0.7.0
         version: 0.7.0(typescript@5.6.2)(vue@3.4.21(typescript@5.6.2))
@@ -26,6 +31,9 @@ importers:
       vite:
         specifier: 5.4.11
         version: 5.4.11
+      vitest:
+        specifier: 2.1.8
+        version: 2.1.8(jsdom@25.0.1)
       vue-tsc:
         specifier: 2.2.0
         version: 2.2.0(typescript@5.6.2)
@@ -41,7 +49,7 @@ importers:
         version: 5.2.1(vite@5.4.11)(vue@3.5.13(typescript@5.6.2))
       '@vue/test-utils':
         specifier: 2.4.6
-        version: 2.4.6
+        version: 2.4.6(vue@3.5.13(typescript@5.6.2))
       '@vue/tsconfig':
         specifier: 0.7.0
         version: 0.7.0(typescript@5.6.2)(vue@3.5.13(typescript@5.6.2))
@@ -446,6 +454,8 @@ packages:
 
   '@vue/test-utils@2.4.6':
     resolution: {integrity: sha512-FMxEjOpYNYiFe0GkaHsnJPXFHxQ6m4t8vI/ElPGpMWxZKpmRvQ33OIrvRXemy6yha03RxhOlQuy+gZMC3CQSow==}
+    peerDependencies:
+      vue: ^3.5.13
 
   '@vue/tsconfig@0.7.0':
     resolution: {integrity: sha512-ku2uNz5MaZ9IerPPUyOHzyjhXoX2kVJaVf7hL315DC17vS6IiZRmmCPfggNbU16QTvM80+uYYy3eYJB59WCtvg==}
@@ -1353,9 +1363,16 @@ snapshots:
 
   '@vue/shared@3.5.13': {}
 
-  '@vue/test-utils@2.4.6':
+  '@vue/test-utils@2.4.6(vue@3.4.21(typescript@5.6.2))':
     dependencies:
       js-beautify: 1.15.1
+      vue: 3.4.21(typescript@5.6.2)
+      vue-component-type-helpers: 2.2.0
+
+  '@vue/test-utils@2.4.6(vue@3.5.13(typescript@5.6.2))':
+    dependencies:
+      js-beautify: 1.15.1
+      vue: 3.5.13(typescript@5.6.2)
       vue-component-type-helpers: 2.2.0
 
   '@vue/tsconfig@0.7.0(typescript@5.6.2)(vue@3.4.21(typescript@5.6.2))':

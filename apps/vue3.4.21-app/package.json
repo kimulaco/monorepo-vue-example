@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "test": "vitest run",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview"
   },
@@ -13,9 +14,11 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "5.2.1",
+    "@vue/test-utils": "2.4.6",
     "@vue/tsconfig": "0.7.0",
     "typescript": "5.6.2",
     "vite": "5.4.11",
+    "vitest": "2.1.8",
     "vue-tsc": "2.2.0"
   }
 }
